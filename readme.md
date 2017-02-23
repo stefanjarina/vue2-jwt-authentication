@@ -1,7 +1,7 @@
 # Vue.js 2 JWT Authentication
 
 ## Disclaimer
-This is just reworked example of https://github.com/auth0-blog/vue-jwt-authentication for Vue 2 and Axios
+This is just a reworked example of https://github.com/auth0-blog/vue-jwt-authentication for Vue 2 and Axios
 For original article or if you want Vue 1 version please navigate to: https://auth0.com/blog/build-an-app-with-vuejs/
 
 -----

@@ -1,11 +1,9 @@
 {
-  "name": "oauth",
+  "name": "vue2-jwt-authentication",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --inline --hot"
   },
-  "repository": {},
   "author": "Stefan Jarina <stefan@jarina.cz>",
   "license": "MIT",
   "devDependencies": {
@@ -26,7 +24,6 @@
     "axios": "^0.15.3",
     "bootstrap": "^3.3.7",
     "vue": "^2.1.10",
-    "vue-resource": "^1.2.0",
     "vue-router": "^2.2.1",
     "vue-template-compiler": "^2.1.10"
   }

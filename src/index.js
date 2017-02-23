@@ -7,14 +7,16 @@ import Login from './components/Login.vue';
 import VueRouter from 'vue-router';
 import auth from './auth'
 
-//import VueResource from 'vue-resource';
 import axios from 'axios';
-Vue.prototype.$http = axios;
+
+// if you want to use the standard this.$http as you used to do with VueResource
+// I don't like this approach so code uses axion directly though
+// Uncomment below and then replace in code "axios" with this.$http
+// Vue.prototype.$http = axios;
 
 // Check the users auth status when the app starts
 auth.checkAuth()
 
-//Vue.use(VueResource)
 Vue.use(VueRouter)
 
 const routes = [
