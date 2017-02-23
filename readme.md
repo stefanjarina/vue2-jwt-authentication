@@ -13,7 +13,7 @@ This example shows how to do JWT authentication in Vue.js apps. It uses Auth0's 
 Clone the repo and then install the server submodule and dependencies.
 
 ```bash
-git clone https://github.com/auth0-blog/nodejs-jwt-authentication-sample server
+git submodule update --init
 cd server
 yarn
 cd ..

@@ -1,31 +1,33 @@
 {
-  "name": "vue-jwt-auth-example",
+  "name": "oauth",
   "version": "1.0.0",
-  "description": "An of how to do JWT Authentication with Vue.js",
+  "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --inline --hot"
   },
-  "author": "ryanchenkie",
+  "repository": {},
+  "author": "Stefan Jarina <stefan@jarina.cz>",
   "license": "MIT",
   "devDependencies": {
-    "babel-core": "^6.0.0",
-    "babel-loader": "^6.0.0",
-    "babel-plugin-transform-runtime": "^6.0.0",
-    "babel-preset-es2015": "^6.0.0",
-    "babel-preset-stage-2": "^6.0.0",
-    "babel-runtime": "^5.8.0",
-    "css-loader": "^0.21.0",
-    "style-loader": "^0.13.0",
-    "vue-hot-reload-api": "^1.2.1",
-    "vue-html-loader": "^1.0.0",
-    "vue-loader": "^7.0.1",
-    "webpack": "^1.12.3",
-    "webpack-dev-server": "^1.12.1"
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-runtime": "^6.23.0",
+    "css-loader": "^0.26.1",
+    "style-loader": "^0.13.1",
+    "vue-hot-reload-api": "^2.0.9",
+    "vue-html-loader": "^1.2.3",
+    "vue-loader": "^11.1.0",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
   },
   "dependencies": {
-    "bootstrap": "^3.3.5",
-    "vue-resource": "^0.1.17",
-    "vue-router": "^0.7.5",
-    "vue": "^1.0.7"
+    "axios": "^0.15.3",
+    "bootstrap": "^3.3.7",
+    "vue": "^2.1.10",
+    "vue-resource": "^1.2.0",
+    "vue-router": "^2.2.1",
+    "vue-template-compiler": "^2.1.10"
   }
 }

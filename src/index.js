@@ -1,40 +1,36 @@
-import Vue from 'vue'
-import App from './components/App.vue'
-import Home from './components/Home.vue'
-import SecretQuote from './components/SecretQuote.vue'
-import Signup from './components/Signup.vue'
-import Login from './components/Login.vue'
-import VueRouter from 'vue-router'
-import VueResource from 'vue-resource'
-Vue.use(VueResource)
-Vue.use(VueRouter)
+import Vue from 'vue';
+import App from './components/App.vue';
+import Home from './components/Home.vue';
+import SecretQuote from './components/SecretQuote.vue';
+import Signup from './components/Signup.vue';
+import Login from './components/Login.vue';
+import VueRouter from 'vue-router';
 import auth from './auth'
 
-Vue.http.headers.common['Authorization'] = 'Bearer ' + localStorage.getItem('id_token');
+//import VueResource from 'vue-resource';
+import axios from 'axios';
+Vue.prototype.$http = axios;
 
-// Check the user's auth status when the app starts
+// Check the users auth status when the app starts
 auth.checkAuth()
 
-export var router = new VueRouter()
+//Vue.use(VueResource)
+Vue.use(VueRouter)
 
-router.map({
-  '/home': {
-    component: Home
-  },
-  'secretquote': {
-    component: SecretQuote
-  },
-  '/login': {
-    component: Login
-  },
-  '/signup': {
-    component: Signup
-  }
+const routes = [
+  { path: '/home', component: Home },
+  { path: '/secretquote', component: SecretQuote },
+  { path: '/signup', component: Signup },
+  { path: '/login', component: Login },
+  { path: '*', redirect: '/home' }
+]
+
+export const router = new VueRouter({
+  routes
 })
 
-router.redirect({
-  '*': '/home'
+const app = new Vue({
+  el: '#app',
+  router: router,
+  render: h => h(App)
 })
-
-router.start(App, '#app')
-
