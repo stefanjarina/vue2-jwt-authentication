@@ -15,10 +15,12 @@ Clone the repo and then install the server submodule and dependencies.
 ```bash
 git submodule update --init
 cd server
+git checkout e6db6fb9290b1c8a0dc0bf97ac7ef200b2fcaa9e
 yarn
 cd ..
 yarn
 ```
+We've checked out the specific commit from server repo as recently on 24th of April it was changed and it stopped working with this example. Because Oauth have already released new article about Vue 2 I am not oging to update this example to work with their new server version but rather just use the older commit.
 
 Once the application scripts are in place, start the server (which will provide the quotes) using:
 
