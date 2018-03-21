@@ -10,7 +10,7 @@ import auth from './auth'
 import axios from 'axios';
 
 // if you want to use the standard this.$http as you used to do with VueResource
-// I don't like this approach so code uses axion directly though
+// I don't like this approach so code uses axios directly though
 // Uncomment below and then replace in code "axios" with this.$http
 // Vue.prototype.$http = axios;
 
