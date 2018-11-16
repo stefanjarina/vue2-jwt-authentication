@@ -28,10 +28,8 @@ export default {
         .catch((err) => { console.log(err) })
     }
   },
-  route: {
-    beforeEnter() {
-      return auth.user.authenticated;
-    }
+  beforeRouteEnter(to, from, next) {
+    if (auth.user.authenticated) next()
   }
 }
 </script>
